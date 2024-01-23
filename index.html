@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket-world</title>
+
+
+    <!-- taildwind and baisyui cdn hear  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+     <!-- font awsome cdn  -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+
+        <section>
+            <!-- navigation ber start hear  -->
+            <div class="conteiner mx-auto lg:px-24 px-8 my-8">
+                <div>
+                    <div class="navbar bg-base-100">
+                        <div class="navbar-start">
+                          <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                              <li><a><span class="text-green-600"> Home </span></a></li>
+                              <li><a>About</a></li>
+                              <li><a>Page</a></li>
+                              <li><a>Blog</a></li>
+                              <li><a>Contact</a></li>
+                              
+                              
+                            </ul>
+                          </div>
+                          <a class="btn btn-ghost text-xl">Cricket World</a>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                          <ul class="menu menu-horizontal px-1">
+                            <li><a><span class="text-green-600 font-bold">Home </span> </a></li>
+                              <li><a>About</a></li>
+                              <li><a>Page</a></li>
+                              <li><a>Blog</a></li>
+                              <li><a>Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="navbar-end flex gap-3">
+                            <i class="fa-solid fa-magnifying-glass"></i> 
+                          <a class="btn bg-green-600 px-5 font-bold">Get Ticket</a>
+                        </div>
+                      </div>
+                </div>
+    
+            </div>
+            <!-- navigation ber end  hear  -->
+        </section>
+
+          <section>
+            <!-- banner section start hear  -->
+            <div  class="conteiner mx-auto lg:px-24 px-8 my-8">
+                <div class="carousel w-full">
+                  <div id="slide1" class="carousel-item relative w-full bg-center bg-cover h-[70vh]">
+                      <img src="images/1.png" class="w-full" />
+                      <div 
+                        class="conteiner absolute lg:flex flex-col justify-between  transform -translate-y-1/2 left-5 right5- top-1/2 mt-40">
+                       <div>
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                       </div>
+                       <div class="h-[18vh] w-1/2 mx-auto bg-black -translate-y-20 shadow-lg rounded-lg">
+            
+                        <div 
+                          class="flex flex-col justify-center text-center w-full p-[12px]  ">
+                          <h1 class="font-bold text-white">
+                            Enjoy the world of cricket through our website
+                          </h1>
+              
+                          <p class="text-white font-semibold">
+                            Any type of cricket equipment and tickets for any game can be found on our website
+                          </p>
+                        </div> 
+                      </div>
+
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full bg-center bg-cover h-[70vh]">
+                      <img src="images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full bg-center bg-cover h-[70vh]">
+                        <div id="slide3" class="carousel-item relative w-full ">
+                      <img src="images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full bg-center bg-cover h-[70vh]">
+                        <div id="slide4" class="carousel-item relative w-full ">
+                      <img src="images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                  </div>
+                </div>    
+              </div>
+
+            </div>
+            
+            <!-- banner section end hear hear  -->
+      
+          </section>
+
+      <section>
+        <!-- cricket club intro  -->
+        
+        <div class="conteinerconteiner mx-auto lg:px-24 px-8 my-8 lg:my-24">
+          <div>
+            
+            <div class="divider mb-5"></div>
+            
+            <div class="flex flex-col items-center justify-center ">
+              
+              <h3 class="text-4xl font-extrabold opacity-80 text-center mt-5">Professional Cricket Club</h3>
+              <p class="text-1xl font-semibold text-center py-5">
+                Our cricket club is recognized by the government of Bangladesh and many players have got chance in 
+                <br>
+                national 19 team and national team from this club.
+              </p>
+
+            </div>
+
+            <div class="divider"></div>
+          </div>
+        </div>
+      </section> 
+      
+        <!-- club player reting section start-->
+
+      <section>
+        <div class="conteiner mx-auto lg:px-24 px-8 my-8 lg:my-24 ">
+
+          <div 
+            class="grid sm:grid-cols-1 md:grid-cols-2 lg:px-24 lg:grid-cols-4 gap-8 lg justify-center items-start ">
+            
+            <div class="w-[20%]">
+              <div class="card w-80 bg-base-100 ">
+                <figure class="px-10 pt-10">
+                  <img src="images/Group 9 (3).jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div 
+                  class="transform  -translate-y-[79px] w-50px h-50px translate-x-[133px]">
+                  <p class="text-[28px] font-semibold  ">
+                    87%
+                  </p>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title pb-3">equipment cost and host free</h2>
+                  <p>
+                    Our cricket club is recognized by the government of Bangladesh and many players have got chance in national 19 team and national team from this club
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="w-[20%]">
+              <div class="card w-80 bg-base-100 ">
+                <figure class="px-10 pt-10">
+                  <img src="images/Group 9 (2).jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div 
+                  class="transform  -translate-y-[79px] w-50px h-50px translate-x-[133px]">
+                  <p class="text-[28px] font-semibold  ">
+                    95%
+                  </p>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title pb-3">Professional Coach</h2>
+                  <p>
+                    Our cricket Coach is recognized by the government of Bangladesh and he have many players  got chance in national 19 team and national team from this club
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="w-[20%]">
+              <div class="card w-80 bg-base-100 ">
+                <figure class="px-10 pt-10">
+                  <img src="images/Group 9 (1).jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div 
+                  class="transform  -translate-y-[79px] w-50px h-50px translate-x-[133px]">
+                  <p class="text-[28px] font-semibold  ">
+                    90%
+                  </p>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title pb-3">Senior Player</h2>
+                  <p>
+                    All the senior players of our club, are the big coaches  the world
+                    And many are captains and many more are in senior positions
+                    All under the Governor of Bangladesh
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="w-[20%]">
+              <div class="card w-80 bg-base-100 ">
+                <figure class="px-10 pt-10">
+                  <img src="images/Group 9.jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div 
+                  class="transform  -translate-y-[79px] w-50px h-50px translate-x-[133px]">
+                  <p class="text-[28px] font-semibold  ">
+                    80%
+                  </p>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title pb-3">Training Ground</h2>
+                  <p>
+                    Our cricket club is recognized by the government of Bangladesh and many players have got chance in national 19 team and national team from this club
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            
+              
+          </div>
+
+          
+          <div class="divider"></div>
+        </div>
+      </section>
+
+      <!-- club player reting section is end-->
+
+
+        <!-- program intro section  -->
+      <section>
+        <div class="conteinerconteiner mx-auto lg:px-24 px-8 my-8 lg:my-24">
+          <div>
+            
+            
+            
+            <div class="flex flex-col items-center justify-center ">
+              
+              <h3 
+                class="text-4xl font-extrabold opacity-80 text-center">Our Up Coming Hockey's Programs
+              </h3>
+              <p class="text-1xl font-semibold text-center py-5">
+                Our cricket club is recognized by the government of Bangladesh and many players have got chance in 
+                <br>
+                national 19 team and national team from this club.
+              </p>
+
+            </div>
+
+            <div class="divider py-5"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- player joining section start -->
+
+        <div class="conteiner mx-auto lg:px-24 px-8  ">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 py-0 justify-center items-center bg-cover">
+
+            <div 
+              class="w-auto h-80 lg:col-span-2 bg-no-repeat rounded-lg bg-center bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(images/2.png)] ">
+              
+              <div class=" flex flex-col justify-center text-center items-center mt-10 p-5">
+                <h3 class="text-white text-2xl font-bold">
+                  Junior Program
+                </h3>
+                <p class="w-2/3 text-[16px] font-semibold text-white my-5">
+                  05.01.2030 at 10.am there is  a morning program for those who want to join come to the club.After that no more admission will be taken
+                </p>
+
+                <a class="btn bg-green-700 px-5 font-bold text-white text-[16px]">Join Now</a>
+              </div>
+            
+            
+            </div>
+              
+              
+            
+
+            <div 
+              class="w-auto h-80 lg:col-span-2 bg-no-repeat rounded-lg bg-center bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(images/3.png)] ">
+
+              <div class=" flex flex-col justify- text-center items-center mt-10 p-5">
+                <h3 class="text-white text-2xl font-bold">
+                  Teenager Program
+                </h3>
+                <p class="w-2/3 text-[16px] font-semibold text-white my-5">
+                  05.01.2030 at 2.pm there is  a Afternoon program for those who want to join come to the club.After that no more admission will be taken
+                </p>
+
+                <a class="btn bg-green-700 px-5 font-bold text-white text-[16px]">Join Now</a>
+              </div>
+            </div>
+
+            <div 
+              class="w-auto h-80 lg:col-span-4 bg-no-repeat rounded-lg bg-center bg-cover bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(images/4.png)] ">
+
+
+              <div 
+                class=" flex flex-col justify-center text-center items-center mt-10 p-5">
+                <h3 class="text-2xl font-bold text-white ">
+                  Professional Program
+                </h3>
+                <p class="w-2/3 text-[16px] font-semibold text-white my-5">
+                  05.01.2030 at 2.pm there is  a Afternoon program for those who want to join come to the club.After that no more admission will be taken
+                </p>
+
+                <a class="btn bg-green-700 px-5 font-bold text-[20px] text-white">Join Now</a>
+                
+                
+                
+              </div>
+            </div>
+            
+
+          </div>
+
+         
+          </div>
+      
+        </div>
+        
+        <!-- player joining section end -->
+ 
+      
+      </section>
+      
+
+      
+
+    </div>
+            
+     
+    <section>
+      <div class="conteiner mx-auto lg:px-24 px-8 my-8 my-24" >
+        <div 
+          class="divider mb-5 mt-20">
+        </div>
+        <div class="flex flex-col items-center justify-center m ">
+              
+        <h3 
+          class="text-4xl font-extrabold opacity-80 text-center pt-10">Our New Products
+        </h3>
+        <p class="text-1xl font-semibold text-center pt-8">
+          All our products are of high quality top notch and imported from Germany.  Also we have free charger for <br> government students and special discount for staff
+        </p>
+        
+
+        <div class=" mt-8">
+          <div 
+            class="divider mb-5 pt-5">
+          </div>
+          <div 
+            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+            
+            <!-- fast shop conteiner  -->
+            <div>
+              <div>
+                <div class="flex gap-6 shadow-md p-6 rounded-lg">
+                  <div>
+                    <img class="w-[180px] h-[172px] rounded-xl" src="images/5.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex gap-6">
+                      <div class="flex gap-2  justify-center items-center">
+                        <i 
+                          class="fa-solid fa-star  text-amber-400 ">
+                        </i>
+                        <p>5.0</p>
+                      </div>
+                      
+                      <div class="flex gap-2 justify-center items-center">
+                        <i class="fa-solid fa-eye"></i>
+                        <p>20</p>
+                      </div>
+                      
+                      <div class="flex gap-2  justify-center items-center">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>200</p>
+                      </div>
+  
+  
+                    </div>
+                    <h1 class="text-[20px] pt-5 font-bold">
+                      World Cup Flags Caricket
+                    </h1>
+                    <p>
+                      top noch dsine and cuality 
+                    </p>
+                    <div class="flex justify-between py-5 gap-5">
+                      <p class="text-green-700">Price - $22.00</p>
+                      <p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Delivery Fee : Free
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="flex gap-6 shadow-md p-6 mt-5 rounded-lg">
+                  <div>
+                    <img class="w-[180px] h-[172px] rounded-xl" src="images/6.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex gap-6">
+                      <div class="flex gap-2  justify-center items-center">
+                        <i 
+                          class="fa-solid fa-star  text-amber-400 ">
+                        </i>
+                        <p>5.0</p>
+                      </div>
+                      
+                      <div class="flex gap-2 justify-center items-center">
+                        <i class="fa-solid fa-eye"></i>
+                        <p>20</p>
+                      </div>
+                      
+                      <div class="flex gap-2  justify-center items-center">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>200</p>
+                      </div>
+  
+  
+                    </div>
+                    <h1 class="text-[20px] pt-5 font-bold">
+                      World Cup Flags Caricket
+                    </h1>
+                    <p>
+                      top noch dsine and cuality 
+                    </p>
+                    <div class="flex justify-between py-5 gap-5">
+                      <p class="text-green-700">Price - $22.00</p>
+                      <p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Delivery Fee : Free
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="flex gap-6 shadow-md p-6 mt-5 roun">
+                  <div>
+                    <img class="w-[180px] h-[172px] rounded-xl" src="images/7.png" alt="">
+                  </div>
+                  <div>
+                    <div class="flex gap-6">
+                      <div class="flex gap-2  justify-center items-center">
+                        <i 
+                          class="fa-solid fa-star  text-amber-400 ">
+                        </i>
+                        <p>5.0</p>
+                      </div>
+                      
+                      <div class="flex gap-2 justify-center items-center">
+                        <i class="fa-solid fa-eye"></i>
+                        <p>20</p>
+                      </div>
+                      
+                      <div class="flex gap-2  justify-center items-center">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>200</p>
+                      </div>
+  
+  
+                    </div>
+                    <h1 class="text-[20px] pt-5 font-bold">
+                      World Cup Flags Caricket
+                    </h1>
+                    <p>
+                      top noch dsine and cuality 
+                    </p>
+                    <div class="flex justify-between py-5 gap-5">
+                      <p class="text-green-700">Price - $22.00</p>
+                      <p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Delivery Fee : Free
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- secend shop conteiner  -->
+            
+            <div>
+              <div class="w-[100%]">
+                <div>
+                  <div class="flex gap-6 shadow-md p-6 rounded-lg">
+                    <div>
+                      <img class="w-[180px] h-[172px] rounded-xl" src="images/8.png" alt="">
+                    </div>
+                    <div>
+                      <div class="flex gap-6">
+                        <div class="flex gap-2  justify-center items-center">
+                          <i 
+                            class="fa-solid fa-star  text-amber-400 ">
+                          </i>
+                          <p>5.0</p>
+                        </div>
+                        
+                        <div class="flex gap-2 justify-center items-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <p>20</p>
+                        </div>
+                        
+                        <div class="flex gap-2  justify-center items-center">
+                          <i class="fa-regular fa-heart"></i>
+                          <p>200</p>
+                        </div>
+    
+    
+                      </div>
+                      <h1 class="text-[20px] pt-5 font-bold">
+                        World Cup Flags Caricket
+                      </h1>
+                      <p>
+                        top noch dsine and cuality 
+                      </p>
+                      <div class="flex justify-between py-5 gap-5">
+                        <p class="text-green-700">Price - $22.00</p>
+                        <p>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+  
+  
+                  <div class="flex gap-6 shadow-md p-6 mt-5 rounded-lg">
+                    <div>
+                      <img class="w-[180px] h-[172px] rounded-xl" src="images/9.png" alt="">
+                    </div>
+                    <div>
+                      <div class="flex gap-6">
+                        <div class="flex gap-2  justify-center items-center">
+                          <i 
+                            class="fa-solid fa-star  text-amber-400 ">
+                          </i>
+                          <p>5.0</p>
+                        </div>
+                        
+                        <div class="flex gap-2 justify-center items-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <p>20</p>
+                        </div>
+                        
+                        <div class="flex gap-2  justify-center items-center">
+                          <i class="fa-regular fa-heart"></i>
+                          <p>200</p>
+                        </div>
+    
+    
+                      </div>
+                      <h1 class="text-[20px] pt-5 font-bold">
+                        World Cup Flags Caricket
+                      </h1>
+                      <p>
+                        top noch dsine and cuality 
+                      </p>
+                      <div class="flex justify-between py-5 gap-5">
+                        <p class="text-green-700">Price - $22.00</p>
+                        <p>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+                  <div class="flex gap-6 shadow-md p-6 mt-5 roun">
+                    <div>
+                      <img class="w-[180px] h-[172px] rounded-xl" src="images/10.png" alt="">
+                    </div>
+                    <div>
+                      <div class="flex gap-6">
+                        <div class="flex gap-2  justify-center items-center">
+                          <i 
+                            class="fa-solid fa-star  text-amber-400 ">
+                          </i>
+                          <p>5.0</p>
+                        </div>
+                        
+                        <div class="flex gap-2 justify-center items-center">
+                          <i class="fa-solid fa-eye"></i>
+                          <p>20</p>
+                        </div>
+                        
+                        <div class="flex gap-2  justify-center items-center">
+                          <i class="fa-regular fa-heart"></i>
+                          <p>200</p>
+                        </div>
+    
+    
+                      </div>
+                      <h1 class="text-[20px] pt-5 font-bold">
+                        World Cup Flags Caricket
+                      </h1>
+                      <p>
+                        top noch dsine and cuality 
+                      </p>
+                      <div class="flex justify-between py-5 gap-5">
+                        <p class="text-green-700">Price - $22.00</p>
+                        <p>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          Delivery Fee : Free
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <!-- form section start hear  -->
+      <div class="conteiner mx-auto lg:px-24 px-8 my-8">
+        
+        <div class="flex flex-col justify-center items-center">
+            
+          <div class="divider mb-5 mt-10 lg:pt-12"></div>
+          
+          <div class="flex flex-col items-center justify-center ">
+            
+            <h3 class="text-4xl font-extrabold opacity-80 text-center mt-5">Get In Touch</h3>
+            <p class="text-[18px] font-semibold text-center py-5">
+              If you want to join our company as a student or staff then fill and submit the form below and our staff will call you within 24 hours.
+            </p>
+
+          </div>
+          <div class="divider  mt-10 "></div>
+        
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="p-10">
+            <div class="w-[374px] h-[216px] bg-green-100 rounded-lg">
+              <div class="m-7 p-5">
+                <img src="images/call.png" alt="">
+                <p class="text-1xl font-semibold opacity-60 pt-4">Phone Number : </p>
+                <p class="text-1xl font-bold pt-3">+974 51001598</p>
+              </div>
+  
+            </div>
+
+            
+            
+            <div class="w-[374px] h-[216px] bg-purple-200 rounded-lg">
+              <div class="m-7 p-5">
+                <img src="images/msg.png" alt="">
+                <p class="text-1xl font-semibold opacity-60 pt-4">Email : </p>
+                <p class="text-1xl font-bold pt-3">cricketworld_rafi@gmail.com</p>
+              </div>
+            </div>
+
+
+            <div class="w-[374px] h-[216px] bg-red-100 rounded-lg">
+              <div class="m-7 p-5">
+                <img src="images/map.png" alt="">
+                <p class="text-1xl font-semibold opacity-60 pt-4">Location :  : </p>
+                <p class="text-1xl font-bold pt-3">+974 51001598</p>
+              </div>
+            </div>
+
+          </div>
+          
+          
+          <div class="my-5 p-10">
+            
+            <p class="text-[20px] font-bold py-3">Your Name</p>
+            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-slate-100" />
+
+            <p class="text-[20px] font-bold py-3">Subject</p>
+            <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-slate-100" />
+            
+            
+            <div class="">
+              <p class="text-[20px] font-bold py-3">Message</p>
+              <input type="text" placeholder="Write your message" class="input input-bordered w-full w-xs lg:w-[900px] lg:h-[400px] bg-slate-100 "/>
+            </div>
+
+
+            <div class="mt-4  lg:w-[900px]">
+              <button class="btn btn-block bg-green-600 text-[16px] font-semibold ">Send Message</button>
+            </div>
+          
+          
+          </div>
+          
+          
+          <div class="my-5 p-10">
+            <p class="text-[20px] font-bold py-3">Your Email</p>
+            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-slate-100" />
+
+            <p class="text-[20px] font-bold py-3">Phone Number</p>
+            <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs bg-slate-100"/>
+
+           
+          </div>
+
+          
+        </div>
+
+      </div>
+      <!-- form section end hear  -->
+      <div class="conteiner mx-auto lg:px-24  my-10 lg:mr-8">
+
+        <div class="h-[150px] bg-slate-100 flex flex-col justify-center items-center rounded-lg">
+          <h3 class="text-[24px] font-extrabold">Social Media</h3>
+          <div class="flex gap-3 mt-4">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+    
+  <footer>
+      <div class="w-full  bg-black">
+        <div class="conteiner mx-auto  lg:px-[100px] lg:py-[100px]">
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-start lg:ml-24 gap-10 ">
+            <!-- for flex  -->
+            <div>
+              <h4 class="text-[28px] text-white font-bold">Get In Touch</h4>
+              <p class="text-[16px] text-white space-x-2">
+                You can directly contact us <br> at the following number for <br> any kind of convenience <br> or inconvenience 
+              </p>
+              
+              <div class="flex mt-5 gap-5">
+                
+                <img src="images/msg.png" alt="">
+                <p class="text-white">cricketworld_rafi@gmail.com</p>
+              </div>
+
+              <div class="flex mt-5 gap-5">
+                
+                <img src="images/call.png" alt="">
+                <p class="text-white">+974 51001598</p>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="text-[18px] text-white font-bold">Company</p>
+              <p>About us </p>
+              <p>Legal Notice</p>
+              <p>Leadership</p>
+              <p>Careers</p>
+              <p>News & Article</p>
+            </div>
+            
+            
+            <div class="text-white">
+              <p class="text-[18px] text-white font-bold">Support</p>
+              <p>Help Center</p>
+              <p> FAQ</p>
+              <p>Ticket Support</p>
+              <p>Contact Us</p>
+
+            </div>
+            
+            
+            <div class="text-white">
+              <p class="text-[18px] text-white font-bold">Services</p>
+              <p>Academy</p>
+              <p>Group Lesson</p>
+              <p>Private Lesson</p>
+              <p>Hockeys for kids</p>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  </footer>
+
+</body>
+</html>
